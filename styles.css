@@ -19,6 +19,15 @@
   flex: 1;
 }
 */
+#warning-message { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+    
 body {
 //	background:red;
 //  -webkit-user-select: none;  /* Chrome all / Safari all */
