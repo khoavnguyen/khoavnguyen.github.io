@@ -7,6 +7,8 @@
   background-color:#222233;
   align-items: center; 
   justify-content: center;  
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (orientation:portrait){
@@ -18,7 +20,7 @@
     #warning-message { display:none; }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (orientation:landscape) and (max-width: 760px) {
   .overlay { opacity: 0; display:none;}
 }
 
@@ -110,7 +112,7 @@ a:active {
     object-fit: cover;
 }
 
-.video-loop .overlay {
+.overlay {
     height: 100%;
     width: 100%;
     position: absolute;
