@@ -319,6 +319,7 @@ $(document).ready(function(){
     if(isMobile)
     {  vid.play();
        vid1.play();
+       $(".overlay").css("opacity", 0);
     }
     playSound = true;
     beepOne.play();
