@@ -226,7 +226,7 @@ function drawstats(){
       circles.push({x: x, y: y, size: circleSize-6, radius: (circleSize-6)/2, stat: statOrder[index], color: statColors[statOrder[index]]});
       ctx.fillStyle = "#fff";
       if(circleIndexes[index].over)ctx.fillStyle = statColors[statOrder[index]];
-      ctx.font = "1.8vmin Arial";
+      ctx.font = "1.8vmin Helvetica ";
       text = statOrder[index].toUpperCase();
       stat = (counter < player[statOrder[index]]) ? counter : player[statOrder[index]];
       var stat1 = stat+"%";
@@ -253,7 +253,7 @@ function drawstats(){
   function pythagorean(dx, dy){
     return Math.sqrt(dx*dx + dy*dy);
   }
-  var fps = 60;
+  var fps = 40;
   var circle;
 
   var oldColor;
