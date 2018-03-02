@@ -21,19 +21,25 @@
 */
 #warning-message { 
   display: none; 
-  font-size: 8vmin;
+  font-size: 2vmin;
   text-align: center;
   color: #aaccff;
   font-family: Helvetica Neue,Helvetica,sans-serif;
   background-color:#222233;  
 }
-    @media only screen and (orientation:portrait){
-        #wrapper { display:none; }
-        #warning-message { display:block; }
-    }
-    @media only screen and (orientation:landscape){
-        #warning-message { display:none; }
-    }
+
+@media only screen and (orientation:portrait){
+    #wrapper { display:none; }
+    #warning-message { display:flex; align-items:center; justify-content: center;}
+}
+
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+}
+
+@media only screen and (max-width: 760px) {
+  .video-loop .overlay { display: none; }
+}
 
 body {
 //	background:red;
