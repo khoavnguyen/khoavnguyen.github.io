@@ -272,7 +272,7 @@ $(document).ready(function(){
   var playSound = false;
   var first = true;
   $('#fullpage').fullpage({
-    sectionsColor: ['#f2f2f2',  '#4BBFC3', 'white', '#4BBFC3'],
+    sectionsColor: ['#f2f2f2',  '#4BBFC3', 'white', '#a82630'],
     loopBottom: false,
     loopHorizontal: false,
     navigation: true,
