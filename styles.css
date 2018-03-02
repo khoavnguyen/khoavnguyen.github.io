@@ -18,8 +18,8 @@
     #warning-message { display:none; }
 }
 
-@media only screen and (max-width: 760px) {
-  .overlay { display: none; }
+@media only screen and (orientation:landscape) and (max-width: 760px) {
+  .overlay { opacity: 0; }
 }
 
 body {
