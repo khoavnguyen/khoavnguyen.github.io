@@ -20,7 +20,7 @@
 	</head>
 	<body >
             <div id="warning-message">
-            Please view this website in landscape mode. I only had time to make a layout for desktop, so mobile browsers may be a bit buggy. Thank you very much!
+            Please view this website in landscape mode. Thank you very much!
             </div>
             <div id="wrapper">
             <audio id="beepone" style="display:none;" controls="controls" preload="auto">
@@ -58,7 +58,7 @@
                         <div style="display: flex; width: 100%; height: 100%;">
                               
                               <div class="slideright" style="position:relative; background-color:#d4d4d4; background-color:#4ebb92; display: block;">
-                                    <div class="w3-content w3-section" style=" width: 100%; height: 40%; left: 10%; display:flex; align-items:center; justify-content: center;  font:normal 11vw Arial;
+                                    <div class="w3-content w3-section" style=" width: 100%; height: 40%; left: 10%; display:flex; align-items:center; justify-content: center;  font:normal 7vw Arial;
  color:#FFFFFF;
  text-shadow: 0 1px 0 #ccc,
  0 2px 0 #c9c9c9,
@@ -72,14 +72,13 @@
  0 5px 10px rgba(0,0,0,.25),
  0 10px 10px rgba(0,0,0,.2),
  0 20px 20px rgba(0,0,0,.15);">
-                                          ABOUT
+                                          BACKGROUND STORY
                                     </div>
                                     <div style="width: 100%; height: 60%; left: 10%; display:flex; justify-content: center; color: #ffffff; font-size: 6vmin;">
                                           <div style="width:70%">
-                                                Firm believer of the Church of Search Engines.<br>
-                                                Somewhat of a clown.<br>
-                                                Spends more time reading game discussions than playing.<br>
-                                                On a journey to defeat the evil Backlog...<br>
+                                                Village idiot on a journey to defeat the evil Backlog<br>
+                                                Spends more time reading game discussions than playing<br>
+                                                Saving the world with the power of friendship and search engines<br>
                                           </div>
 
                                     </div>
@@ -91,7 +90,7 @@
                                     <div style="width:30%;height: 21%; background:url('./rsc/mii2.png') center no-repeat; background-size: contain;">
                                     </div>  
                                          
-                                    <div style="font:normal 4vmin Arial">Khoa<br>Lv.99 Freelancer</div>
+                                    <div style="font:normal 4vmin Arial">Khoa<br>Lv.99 Villager</div>
 
                                     <div  id="canvasid" style="">
                                           <canvas id="canvas" width="470" height="470">
@@ -103,12 +102,28 @@
                   <div class="section" id="projects">
                         <div class="scrollarrow3"></div>
                         <div class="scrollarrow3" style="bottom: 5%;animation-delay: 0.2s;"></div>
+                        
                         <div class="slide" style="background-color:#f9c70a; position: relative;">
-                              <div class="" style="width: 100%; height:100%; background:url('./rsc/projects.png') 50% 50% no-repeat; background-size: contain; ">        
+                              <div class="" style="width: 100%; height:100%; background:url('./rsc/projects.png') 50% 50% no-repeat; background-size: contain;">        
                               </div>
                  <!--             <div class="revealarrow" style="width: 29%; height: 20%; right: 0; top: 40%; background-color:#f9c70a; position: absolute; z-index: 2;"></div>-->
                         </div>
 
+                        <div id="ocean" class="slide">
+                              <div style="width: 100%; height: 100%;">
+
+                                    <div class="slidetop" style="">
+                                          <div class="w3-content w3-section" style="width:100%; height:100%; background:url('./rsc/ocean.png') 50% 50% no-repeat; background-size: contain; background-color: #c5c5c4;">
+                                          </div>
+                                    </div>
+                                    <div class="slidebottom" style="display:flex; align-items:center;  justify-content: center; background-color: #004a4e;">
+                                          <div style="width:80%; height:100%; display:flex; align-items:center;">
+                                                <a target="_blank" href="https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch01.html">Customizable ocean model using Gerstner waves, cubemap reflection, and flow mapping 
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>              
 
                        <div id="fishanimation" class="slide" style="position:relative;">
                               <div class="video-loop" style="opacity: 1;">
@@ -140,7 +155,7 @@
                               </div>
                         </div>
 
-                        <div id="statueshaders" class="slide"> 
+                        <div id="shaders" class="slide"> 
                               <div style="display: flex; width: 100%; height: 100%;">
                                     <div class="slideleft" style="display:flex;align-items:center; justify-content: center; background-color: #cc5b2f; color: #ffffff;">
                                           <div style="width:80%; height:100%; display:flex; align-items:center; ">
@@ -148,42 +163,26 @@
                                           </div>
                                     </div>
                                     <div class="slideright" >
-                                          <div id="crossfade" class="w3-content w3-section" style="max-width:100%;">
-                                                <img class="bottom" data-src="./rsc/statue2.png">
-                                                <img class="top" data-src="./rsc/statue1.png">
+                                          <div id="cf4a" class="w3-content w3-section" style="max-width:100%;">
+                                                <img data-src="./rsc/butterfly.png">
+                                                <img data-src="./rsc/statue.png">
+                                                <img data-src="./rsc/curved.png">
                                           </div>
-                              
+                                   
                                     </div>
                               </div>
                         </div>                    
 
                         <div id="upheapval" class="slide" style="position:relative;">
-                          <!--   <div class="w3-content w3-section" style="width:100%; height:100%;background-color:#ced7f2;">
-                                    <div class="slidetop w3-content w3-section" style="width: 100%; height:45%; background:url('./rsc/upheaval.png') top no-repeat; background-size: contain;">
-                                          
-                                    </div>
-                                    <div class="slidebottom " style="height:55%; background-color:#ced7f2; color:#ffffff;">
-                                          Upheaval
-                                         <h5>testing text</h5>
-                                    </div>
-                              </div>-->
                               <div class="" style="width: 100%; height:100%; background:url('./rsc/upheaval.png') 50% 50% no-repeat; background-size: contain; ">        
                               </div>
                               <div class="slidebottom " style="color: #514689; position:absolute; z-index:2; left:0%; bottom: 0%; display:flex; align-items:center;  justify-content: center; background: rgba(206, 215, 242, 1);  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;">
                                     <div style="width:80%; height:100%; display:flex; align-items:center;  ">
-                                    <a target="_blank" href="https://www.youtube.com/watch?v=znHIgQsGggQ&list=PLdys-v_aCzfcfpOhKUIBgem1xCiSaOPYw&index=2">Puzzle-platformer with online learning AI that adapts to player's behavior </a>
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=znHIgQsGggQ&list=PLdys-v_aCzfcfpOhKUIBgem1xCiSaOPYw&index=2">Puzzle-platformer with online Q-learning AI that adapts to player's behavior </a>
                                </div></div>
                         </div>
 
                         <div id="moonflower" class="slide">
-                        <!--      <div style="position:relative; display: flex; width: 100%; height: 100%; ">
-                                    <div class="" style="width: 100%; height:100%; background:url('./rsc/moonflower.png') 90% 50% no-repeat; background-size: contain;">
-                                    </div>
-                                    <div class="slidebottom" style="width: 30%; height:100%; background-color:#ffffff; color: #197f67; position:absolute; z-index:2; left:5%; bottom: 0%; display:flex; align-items:center; background: rgba(204, 204, 204, 0); text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;">
-                                          Stealth game with behavior tree for AI and a focus on animation
-                                     </div>
-                               </div>
-                         -->
                               <div style="display: flex; width: 100%; height: 100%;">
                                     <div class="slideleft" style="display:flex; align-items:center; justify-content: center; background-color:#004a4e; color:#ffffff;">
                                           <div style="width:80%; height:100%; display:flex; align-items:center; ">
@@ -207,7 +206,8 @@
                                     <div class="slidebottom" style="display:flex; align-items:center;  justify-content: center; ">
                                           <div style="width:80%; height:100%; display:flex; align-items:center;">
                                           <a target="_blank" href="./rsc/report.pdf">PCA survey to determine factors which affect sales and reception of Steam indie games  </a>
-                                    </div></div>
+                                          </div>
+                                    </div>
                               </div>
                         </div>
 
