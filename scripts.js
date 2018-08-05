@@ -43,8 +43,17 @@ function drawstats(){
   var canvas = document.getElementById("canvas");
   // Get canvas context.
   var ctx = canvas.getContext("2d");
+  var dpi = window.devicePixelRatio;
   ctx.canvas.width  = window.outerWidth * 0.35 * 0.7;
   ctx.canvas.height = ctx.canvas.width;
+ // fix_dpi();
+
+  function fix_dpi() {
+    var style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);
+    var style_width = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2);
+    canvas.setAttribute('height', style_height * dpi);
+    canvas.setAttribute('width', style_width * dpi);
+  }
 
 
   // Define pentagon (or other polygon) size and coordinates.
@@ -60,6 +69,7 @@ function drawstats(){
   function resizeCanvas() {
   ctx.canvas.width  = window.outerWidth * 0.35 * 0.7;
   ctx.canvas.height = ctx.canvas.width;
+//  fix_dpi();
   polygonX = ctx.canvas.width / 2;
   polygonY = ctx.canvas.width / 2;
   polygonSize = ctx.canvas.width / 4;
